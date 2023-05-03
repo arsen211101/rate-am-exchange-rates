@@ -1,6 +1,4 @@
-﻿using static ggTask.Pages.ExchangeRates;
-
-namespace ggTask.Models
+﻿namespace Currency.Exchange.Rate.Scraper.Web.Models
 {
     public class Entity
     {

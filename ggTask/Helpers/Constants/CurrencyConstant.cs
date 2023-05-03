@@ -1,4 +1,4 @@
-﻿namespace ggTask.Helpers.Constants
+﻿namespace Currency.Exchange.Rate.Scraper.Web.Helpers.Constants
 {
     public enum CurrencyConstant
     {

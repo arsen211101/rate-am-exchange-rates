@@ -1,8 +1,8 @@
-﻿using ggTask.Helpers.Constants;
-using ggTask.Models;
+﻿using Currency.Exchange.Rate.Scraper.Web.Helpers.Constants;
+using Currency.Exchange.Rate.Scraper.Web.Models;
 using HtmlAgilityPack;
 
-namespace ggTask.Services
+namespace Currency.Exchange.Rate.Scraper.Web.Services
 {
     public interface IRatesService
     {

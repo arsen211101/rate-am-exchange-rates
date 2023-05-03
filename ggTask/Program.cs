@@ -1,4 +1,4 @@
-using ggTask.Services;
+using Currency.Exchange.Rate.Scraper.Web.Services;
 using HtmlAgilityPack;
 
 var builder = WebApplication.CreateBuilder(args);
