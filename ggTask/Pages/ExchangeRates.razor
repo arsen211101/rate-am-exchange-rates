@@ -1,0 +1,63 @@
+﻿@page "/exchange-rates"
+@page "/"
+
+@using HtmlAgilityPack;
+@using System.Collections.Generic;
+@using System.Collections;
+@using ggTask.Models;
+@using ggTask.Services;
+
+@inject IRatesService _rateService
+
+<h1>Exchange Rates</h1>
+
+@if (exchangeRates == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <div class="table-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Bank</td>
+                    <td>Date</td>
+                    @for (int i = 0; i < 4; i++)
+                    {
+                        <td>Currency</td>
+                        <td>Buy</td>
+                        <td>Sel</td>
+                    }
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var rate in exchangeRates)
+                {
+                    <tr>
+                        <td>@rate.Id</td>
+                        <td>@rate.Bank</td>
+                        <td>@rate.SetDateTime</td>
+                        @foreach (var item in rate.CurList)
+                        {
+                            <td>@item.Currency</td>
+                            <td>@item.BuyPrice</td>
+                            <td>@item.SellPrice</td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+@code {
+    List<Entity> exchangeRates = new List<Entity>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        exchangeRates = await _rateService.GetExchangeRates();
+    }
+}
