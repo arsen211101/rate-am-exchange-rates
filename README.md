@@ -1,4 +1,4 @@
-#Currency Exchange Rates Scraper
+Currency Exchange Rates Scraper
 This project scrapes the currency exchange rates from https://rate.am and displays them on a website. The technology used for this project is C# and .NET.
 
 Installation
