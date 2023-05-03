@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Currency.Exchange.Rate.Scraper.Web", "ggTask\Currency.Exchange.Rate.Scraper.Web.csproj", "{9C02598B-8CBA-4A60-A031-60715D0C042E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Currency.Exchange.Rate.Scraper.Web", "CurrencyExchangeRateProject\Currency.Exchange.Rate.Scraper.Web.csproj", "{0FDD4FFA-3722-4245-8EE1-A898D0D15291}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9C02598B-8CBA-4A60-A031-60715D0C042E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9C02598B-8CBA-4A60-A031-60715D0C042E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9C02598B-8CBA-4A60-A031-60715D0C042E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9C02598B-8CBA-4A60-A031-60715D0C042E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FDD4FFA-3722-4245-8EE1-A898D0D15291}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FDD4FFA-3722-4245-8EE1-A898D0D15291}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FDD4FFA-3722-4245-8EE1-A898D0D15291}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FDD4FFA-3722-4245-8EE1-A898D0D15291}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
